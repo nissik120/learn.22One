@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Home | Learn With 22One</title>
+    <title>Dashboard | Learn With 22One</title>
     <link
       rel="stylesheet"
       href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css"
@@ -17,13 +17,9 @@
           <br /><small><i>with 22One</i></small>
         </li>
       </ul>
-    <!--
       <ul>
-        <li><a href="#">?</a></li>
-        <li><a href="#">Search</a></li>
-        <li><a href="#" role="button">My Account</a></li>
+        <li><a href="../index.html" role="button">Logout</a></li>
       </ul>
-    -->
     </nav>
 
     <header class="container">
@@ -31,16 +27,27 @@
       <p>
         An interactive digital course on physical education concepts.
         <br />
-        Adapted to the current digital age and reflective of the post-COVID
-        world.
+        Powered by 22One Digital.
       </p>
-      <a href="./src/dashboard.html" role="button">Try For Free</a>
     </header>
+
+    <main class="container-fluid">
+      <div class="item-course" onclick="location.href='../index.html'">
+        <p>Course Intro</p>
+      </div>
+      <div class="item-course" onclick="location.href='../index.html'">
+        <p>Quality of Education (Read)</p>
+      </div>
+      <div class="item-course" onclick="location.href='../content/01-sem/sem.html'">
+        <p>Introduction to SEM</p>
+      </div>
+    </main>
 
     <footer class="container footer">
       <small>Learn With 22One</small>
       <small id="copyrightYear"></small>
     </footer>
 
+    <script src="index.js"></script>
   </body>
 </html>
